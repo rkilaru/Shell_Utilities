@@ -3,7 +3,7 @@
 function status_check {
 
 ITERATIONS=15   # change this one to suite your requirement
-SLEEP=2          # time interval between each iterations
+SLEEP=2          # time interval between each iterations in seconds
 STATUS_FILE=status.txt # if you are waiting for a for a job complettion, with file as lock.
 
 FLAG=false
@@ -40,6 +40,3 @@ else
   echo "write code here to handle the failure"
   exit 1  #failure
 fi
-
-
-
